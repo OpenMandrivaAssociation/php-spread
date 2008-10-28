@@ -11,7 +11,7 @@ License:	PHP License
 URL:		http://pecl.php.net/package/spread/
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 BuildRequires:	php-devel >= 3:5.2.0
-BuildRequires:	libspread-devel >= 4.0.0
+BuildRequires:	spread-devel >= 4.0.0
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
@@ -67,4 +67,3 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %attr(0644,root,root) %config(noreplace) %{_sysconfdir}/php.d/%{inifile}
 %attr(0755,root,root) %{_libdir}/php/extensions/%{soname}
-
