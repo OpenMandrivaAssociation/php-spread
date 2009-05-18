@@ -5,7 +5,7 @@
 Summary:	A php interface to the Spread toolkit API
 Name:		php-%{modname}
 Version:	2.1.0
-Release:	%mkrel 5
+Release:	%mkrel 6
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/spread/
