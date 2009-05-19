@@ -10,6 +10,7 @@ Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/spread/
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
+Patch0:		spread-2.1.0-php53_fix.diff
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	spread-devel >= 4.0.0
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -22,6 +23,8 @@ Information on Spread can be found at http://www.spread.org/
 
 %setup -q -n %{modname}-%{version}
 [ "../package*.xml" != "/" ] && mv -f ../package*.xml .
+
+%patch0 -p0
 
 # lib64 fixes
 perl -pi -e "s|/lib\b|/%{_lib}|g" config.m4
