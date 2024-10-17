@@ -8,7 +8,7 @@ Version:	2.1.0
 Release:	%mkrel 20
 Group:		Development/PHP
 License:	PHP License
-URL:		http://pecl.php.net/package/spread/
+URL:		https://pecl.php.net/package/spread/
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 Patch0:		spread-2.1.0-php53_fix.diff
 BuildRequires:	php-devel >= 3:5.2.0
